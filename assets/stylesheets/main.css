@@ -54,14 +54,36 @@ Custom Styles
 */
 
 h1 {
-	font-size: 36px;
+	font-size: 40px;
 	line-height: 44px;
+}
+
+h2 {
+	color: #0AA1DA;
+	font-size: 22px;
 }
 
 .hero {
 	text-align: center;
 	background-color: #546368;
 }
+
+.bar-skills h5 {
+	float: left;
+	width: 33%;
+}
+
+.info-table table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border-bottom: 1px solid #cecfd5;
+	padding: 10px 15px;
+}
+
+
 
 /*
 =============================================
@@ -109,6 +131,24 @@ Grid
 }
 
 /*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
 ==================================
 Links
 ==================================
@@ -135,6 +175,17 @@ header {
 
 .logo h1 {
 	color: #fff;
+	
+}
+
+.logo h4 {
+	
+}
+
+.logo img {
+	float: right;
+	border-radius: 50%;
+	vertical-align: top;
 }
 
 /*
@@ -179,4 +230,44 @@ footer a {
 	color: #fff;
 }
 
+/*
+========================================
+Lists
+========================================
+*/
+
+.custom-list h5,
+.custom-list h6 {
+	font-weight: 600;
+}
+
+.custom-list h6 {
+	text-align: right;
+}
+
+.custom-list p {
+
+}
+
+
+/*
+========================================
+Fancy Progress Bars
+========================================
+*/
+
+#progressbar {
+  background-color: #b2b2b2;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  float: right;
+  width: 66%;
+}
+
+#progressbar>div {
+  background-color: #0981D3;
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+}
 
